@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="icon" href="./imgs/favicon.ico">
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="google-site-verification" content="GNjk2L-oCERFymx4K1gbJHf1kOrZ8xW7do3o1F9cdmg" />
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <title>Amexxa | Empaques | Embalajes | Etiquetas en Ciudad de México</title>
+  <meta name="description" content="Somos Fabricantes De Empaques Y Embalajes De Alta Calidad; Como Etiquetas Adhesivas, Cajas Plegadizas, Cajas De Corrugado Con O Sin Impresión En CDMX." />
+</head>
+
+<body id="inicio" class="uppercase text-slate-800">
+  <header class="sticky top-0 z-40 bg-white text-lg bg-opacity-90">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#inicio"><img src="./imgs/Logo_Amexxa_Nuevo-removebg-preview.png" alt="" class="h-12 w-48 top-2"></a>
+      </div>
+      <ul class="links font-bold">
+        <li class="hover:text-blue-500">
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li class="hover:text-blue-500">
+          <a href="#nosotros">Nosotros</a>
+        </li>
+        <li class="hover:text-blue-500">
+          <a href="#productos">Productos</a>
+        </li>
+        <li class="hover:text-blue-500">
+          <a href="#clientes">Clientes</a>
+        </li>
+        <li class="hover:text-blue-500">
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+      <a class="action_btn"
+              href="./cotizaciones">Cotizar</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu font-bold">
+      <li class="hover:text-blue-500">
+        <a href="#inicio">Inicio</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="#nosotros">Nosotros</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="#productos">Productos</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="#clientes">Clientes</a>
+      </li>
+      <li class="hover:text-blue-500">
+        <a href="#contacto">Contacto</a>
+      </li>
+      <li>
+        <a class="action_btn"
+              href="./cotizaciones">Cotizar</a>
+      </li>
+    </div>
+  </header>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+    toggleBtn.onclick = function (){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+  <section>
+    <div id="default-carousel" class="relative md:h-screen md:static" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 md:h-screen overflow-hidden">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <span
+            class="absolute text-xs md:text-4xl xl:text-7xl font-bold text-gray-800 justify-center dark:text-gray-800 z-30 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full px-20">Ofrecemos
+            una gran variedad de productos de alta calidad</span>
+          <img src="./imgs/cajas-carton-corruuado-embalaje.jpg" class="absolute block w-full h-full" alt="..." />
+          <div class="absolute justify-center z-32 -translate-x-1/2 -translate-y-3/4 top-3/4 left-1/2">
+            <a class="px-2 py-2 md:px-12 md:py-5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out"
+              href="#productos">Ver productos</a>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <span
+            class="absolute text-xs md:text-4xl font-bold text-slate-900 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 xl:text-7xl dark:text-gray-800 bg-opacity-0 z-30 text-center justify-center w-full px-20">Impresión
+            de calidad en plazos cortos</span>
+          <img src="./imgs/empresa-de-artes-graficas.jpg" class="absolute block w-full h-full" alt="..." />
+          <div class="absolute justify-center z-33 -translate-x-1/2
+            -translate-y-3/4 top-3/4 left-1/2"">
+            <a
+              class=" px-2 py-2 md:px-12 md:py-5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase
+            rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none
+            focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out"
+            href="cotizaciones">Cotizar</a>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./imgs/Camioneta-amexxa.jpg" class="absolute block w-full h-full" alt="..." />
+          <span
+            class="absolute text-xs md:text-4xl font-bold text-slate-900 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 xl:text-7xl dark:text-gray-800 bg-opacity-0 z-30 text-center justify-center w-full px-20">Entregamos
+            tus productos en toda la república</span>
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+  </section>
+  <section id="nosotros"
+    class="bg-[url('./imgs/empresas-artes-graficas-1024x662.webp')] justify-center text-sm md:text-xl bg-no-repeat bg-cover lg:mb-28 py-28 bg-center">
+    <h3
+      class="font-bold text-white md:text-6xl text-3xl wow fadeInLeft justify-center text-center px-1 md:px-12 2xl:px-72 mb-6 pt-20"
+      data-wow-duration="1s" data-wow-delay=".5s">
+      Sobre nosotros</h3>
+    <p class="font-normal text-white wow fadeInLeft px-6 md:px-12 2xl:px-72 mb-6 text-justify"
+      data-wow-duration="1s" data-wow-delay=".5s">
+      Amexxa es una empresa 100% mexicana, dedicada al desarrollo,
+      manufactura y distribución de las artes gráficas y empaque. Somos
+      fabricantes de empaques y embalajes de alta calidad; como etiquetas
+      adhesivas y no adhesivas, cajas plegadizas de fondo automático y
+      semi automático, y comercialización de playo, fleje, cintas
+      adhesivas y cajas de corrugado con o sin impresión. Nuestra
+      filosofía es generar un empaque único para cada empresa. Tenemos
+      claro que el empaque es lo primero que el cliente ve y toca y
+      queremos que lo que generemos juntos muestre lo mejor de su
+      producto. Contamos con altos estándares de calidad y precios
+      accesibles.
+    </p>
+    <div class="grid lg:grid-cols-3 mt-20 px-1 md:px-12 2xl:px-72 gap-10 lg:gap-20 grid-cols-1">
+      <div
+        class="bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl shadow-lg px-3 py-3 wow fadeIn bg-white"
+        data-wow-duration="1s" data-wow-delay=".5s">
+        <h3 class="font-semibold text-gray-800 md:text-6xl text-3xl justify-center items-center flex mb-3">
+          Misión
+        </h3>
+        <p class="font-normal justify-center items-center text-center">
+          Alcanzar el liderazgo de la industria gráfica a través de la
+          integración de la más avanzada tecnología, desarrollando procesos de
+          mejora continua y capacitación en todos los niveles de la empresa,
+          propiciando rentabilidad y crecimiento en beneficio de nuestros
+          clientes.
+        </p>
+      </div>
+      <div
+        class="bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl shadow-lg px-3 py-3 wow fadeIn bg-white"
+        data-wow-duration="1s" data-wow-delay=".5s">
+        <h3 class="font-semibold text-gray-800 md:text-6xl text-3xl justify-center items-center flex mb-3">
+          visión
+        </h3>
+        <p class="font-normal justify-center items-center text-center">
+          ser una empresa reconocida por nuestros clientes, proveedores y
+          trabajadores como lideres del segmento de empaques, etiquetas e
+          impresos, orientados a la mejora continua.
+        </p>
+      </div>
+      <div
+        class="bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl shadow-lg px-3 py-3 wow fadeIn bg-white"
+        data-wow-duration="1s" data-wow-delay=".5s">
+        <h3 class="font-semibold text-gray-800 md:text-6xl text-3xl justify-center items-center flex mb-3 text-center">
+          Política de calidad
+        </h3>
+        <p class="font-normal justify-center items-center text-center">
+          En AMEXXA estamos comprometidos con la fabricación de etiquetas,
+          cajas plegadizas que satisfagan las necesidades de nuestros
+          clientes.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="productos" class="bg-white  wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+    <h3
+      class="font-bold text-gray-800 md:text-6xl text-3xl justify-center items-center flex pt-24 mb-6 px-6 md:px-24 2xl:px-72">
+      Productos
+    </h3>
+    <div
+      class="grid lg:grid-cols-5 items-center justify-center lg:gap-20 mb-6 lg:mb-12 px-6 gap-10 md:px-12 2xl:px-72 grid-rows-2">
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/cd9604_516be6238e864ba6a45be9bb4335818d_mv2.png"
+          alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Caja plegadiza
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/Caja-inviolable-fondo-automatico-600x600-1.png"
+          alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Caja de fondo automático
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/istockphoto-635948926-612x612.jpg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Caja de pegue lineal
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-4 border-blue-300 shadow-xl" src="./imgs/05e6c61aa729abef1b8ed30d5a695e3a.jpg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Empaques en microcorrugado
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/81up6JZPj+L._SX342_.jpg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Empaques en corrugado
+        </figcaption>
+      </figure>
+      <figure class="max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/etiquetas-adhesivas-en-rollo.jpeg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Etiquetas
+        </figcaption>
+      </figure>
+      <figure class="max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/18.-como-elaborar-folletos.jpg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Folletos
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/81mqXd9tXAL._AC_SS450_.jpg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Estampas
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/848689.jpg" alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Fleje
+        </figcaption>
+      </figure>
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
+        <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/D_NQ_NP_836443-MLM31954947634_082019-O.jpg"
+          alt="" />
+        <figcaption class="font-semibold px-4 text-lg text-gray-800 bottom-6 text-center">
+          Playo
+        </figcaption>
+      </figure>
+    </div>
+    <div class="flex justify-center items-center">
+      <a class="px-12 py-5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out lg:mb-28"
+        href="cotizaciones">Cotizar</a>
+    </div>
+  </section>
+  <section id="clientes" class="bg-white wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+    <h3
+      class="font-bold text-gray-800 md:text-6xl text-3xl justify-center items-center flex pt-24 mb-6 px-6 md:px-24 2xl:px-72">
+      Nuestros clientes
+    </h3>
+    <div
+      class="grid lg:grid-cols-4 justify-center items-center lg:gap-20 mb-6 lg:mb-20 px-6 gap-10 md:px-32 2xl:px-72 lg:grid-rows-2">
+      <img src="./imgs/Screen-Shot-2018-01-23-at-10.56.22.png" alt="" class="w-full h-auto" />
+      <img src="./imgs/Midea-logo.png" alt="" class="w-full h-auto" />
+      <img src="./imgs/glassia-company-logo-small.png" alt="" class="w-full h-auto mb-12 lg:mb-0 lg:mt-6" />
+      <img src="./imgs/logo_purple.png" alt="" class="w-full h-auto mb-12 lg:mb-0" />
+      <img src="./imgs/header-LOGO_MU-3.png" alt="" class="w-full h-auto" />
+      <img src="./imgs/Mezcal-Beneva.jpg" alt="" class="w-full h-auto" />
+      <img src="./imgs/PROEBEE.png" alt="" class="w-full h-auto" />
+      <img src="./imgs/logo-paralelo-mov.png" alt="" class="w-full h-auto" />
+    </div>
+  </section>
+  <section id="contacto" class="text-gray-800 text-center bg-white">
+    <style>
+      .map-container {
+        height: 400px;
+      }
+    </style>
+    <div class="px-1 md:px-12 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+      <div class="container mx-auto xl:px-32">
+        <div class="grid lg:grid-cols-2 items-center lg:gap-20">
+          <div class="mb-12 lg:mb-6 mt-20">
+            <div
+              class="block shadow-lg px-6 py-12 md:px-12 lg:-mr-14 bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+              <h2 class="text-3xl font-bold mb-12">Contáctanos</h2>
+              <form id="form1" action="https://formsubmit.co/IMPRESIONESFRANCIA@GMAIL.COM" method="POST">
+                <div class="form-group mb-6">
+                  <input type="text"
+                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    id="input1" placeholder="Nombre" name="Nombre" />
+                </div>
+                <div class="form-group mb-6">
+                  <input type="email"
+                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    id="input2" placeholder="Email" name="Email" />
+                </div>
+                <div class="form-group mb-6">
+                  <textarea
+                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    id="input3" rows="3" placeholder="Mensaje" name="Mensaje"></textarea>
+                </div>
+                <button type="submit"
+                  class="w-full px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out button">
+                  Enviar
+                </button>
+                <input type="hidden" name="_next" value="http://amexxa.com.mx/">
+                <input type="hidden" name="_captcha" value="false">
+              </form>
+            </div>
+          </div>
+          <div class="mb-12 lg:mb-6 mt-4 lg:mt-20">
+            <div class="map-container relative shadow-lg rounded-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3768576205703!2d-99.19047498461184!3d19.525427742764226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7129fb579ff%3A0x2e39679c7dd46c42!2sInternet%20Interactiva!5e0!3m2!1ses-419!2smx!4v1676571087399!5m2!1ses-419!2smx"
+                class="left-0 top-0 h-full w-full absolute rounded-lg" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative z-10 container px-6 mx-auto xl:px-32 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+      <div class="flex flex-wrap -m-3 mb-3">
+        <div class="w-full md:w-1/3 p-3 mb-3">
+          <div
+            class="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl shadow-lg">
+            <div class="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-100 rounded-full">
+              <div class="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <svg width="32" height="33" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 11.1666L14.5208 18.1805C15.4165 18.7776 16.5835 18.7776 17.4792 18.1805L28 11.1666M6.66667 25.8333H25.3333C26.8061 25.8333 28 24.6394 28 23.1666V9.83329C28 8.36053 26.8061 7.16663 25.3333 7.16663H6.66667C5.19391 7.16663 4 8.36053 4 9.83329V23.1666C4 24.6394 5.19391 25.8333 6.66667 25.8333Z"
+                    stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="mb-3 text-xl font-bold font-heading leading-snug">
+              Correo
+            </h3>
+            <p class="font-medium leading-relaxed break-words">
+              impresionesfrancia@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-3 mb-3">
+          <div
+            class="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl shadow-lg">
+            <div class="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
+              <div class="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <svg width="32" height="33" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 7.16667C4 5.69391 5.19391 4.5 6.66667 4.5H11.039C11.6129 4.5 12.1224 4.86724 12.3039 5.4117L14.301 11.4029C14.5108 12.0324 14.2258 12.7204 13.6324 13.0172L10.6227 14.522C12.0923 17.7816 14.7184 20.4077 17.978 21.8773L19.4828 18.8676C19.7796 18.2742 20.4676 17.9892 21.0971 18.199L27.0883 20.1961C27.6328 20.3776 28 20.8871 28 21.461V25.8333C28 27.3061 26.8061 28.5 25.3333 28.5H24C12.9543 28.5 4 19.5457 4 8.5V7.16667Z"
+                    stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="mb-3 text-xl font-bold font-heading leading-snug">
+              Llámanos
+            </h3>
+            <p class="font-medium leading-relaxed">55 35 69 64 97</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-3 mb-3">
+          <div
+            class="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl shadow-lg">
+            <div class="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
+              <div class="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <svg width="32" height="33" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.5431 22.7091C22.1797 24.0725 19.192 27.0602 17.4133 28.8389C16.6323 29.62 15.3693 29.6203 14.5883 28.8392C12.8393 27.0903 9.91373 24.1647 8.45818 22.7091C4.29259 18.5435 4.29259 11.7898 8.45818 7.62419C12.6238 3.4586 19.3775 3.4586 23.5431 7.62419C27.7087 11.7898 27.7087 18.5435 23.5431 22.7091Z"
+                    stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path
+                    d="M20.0007 15.1667C20.0007 17.3758 18.2098 19.1667 16.0007 19.1667C13.7915 19.1667 12.0007 17.3758 12.0007 15.1667C12.0007 12.9575 13.7915 11.1667 16.0007 11.1667C18.2098 11.1667 20.0007 12.9575 20.0007 15.1667Z"
+                    stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="mb-3 text-xl font-bold font-heading leading-snug">
+              Ubicación
+            </h3>
+            <p class="font-medium max-w-xs mx-auto leading-relaxed">
+              Margarita lote 25 casa 8 col los reyes Ixtacala Tlalnepantla Edo
+              de México C.P. 54090
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="https://api.whatsapp.com/send?phone=525535696497"
+    class="flex fixed w-14 h-14 bottom-20 right-4 bg-[#25d366] z-50 items-center justify-center text-white rounded-full shadow-[#999] text-3xl hover:bg-green-400"
+    target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <footer class="bg-gray-800 text-center lg:text-left">
+    <div class="text-gray-200 text-center p-4">
+      © 2023 Copyright:
+      <a class="text-gray-200">Amexxa SA</a>
+    </div>
+  </footer>
+  <script src="./js/smooth-scroll.js"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="./js/form1.js"></script>
+</body>
+
+</html>
