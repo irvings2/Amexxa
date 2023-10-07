@@ -86,6 +86,22 @@ header{
     justify-content: center;
 }
 
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('/imgs/layered-waves-haikei.svg');
+}
+
+.layer2 {
+    background-image: url('/imgs/layered-waves-haikei1.svg');
+}
+
 @media(max-width: 992px){
     .navbar .links,
     .navbar .action_btn{

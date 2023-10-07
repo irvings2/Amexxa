@@ -95,9 +95,9 @@
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <span
-            class="absolute text-xs md:text-4xl xl:text-7xl font-bold text-gray-800 justify-center dark:text-gray-800 z-30 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full px-20">Ofrecemos
+            class="absolute text-xs md:text-4xl xl:text-7xl font-bold text-white drop-shadow-xl justify-center dark:text-gray-800 z-30 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full px-20">Ofrecemos
             una gran variedad de productos de alta calidad</span>
-          <img src="./imgs/cajas-carton-corruuado-embalaje.jpg" class="absolute block w-full h-full" alt="..." />
+          <img src="./imgs/cajas-carton-corruuado-embalaje.jpg" class="absolute block w-full h-full" alt="..." style="filter: grayscale(50%) brightness(50%);"/>
           <div class="absolute justify-center z-32 -translate-x-1/2 -translate-y-3/4 top-3/4 left-1/2">
             <a class="px-2 py-2 md:px-12 md:py-5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out"
               href="#productos">Ver productos</a>
@@ -106,9 +106,9 @@
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <span
-            class="absolute text-xs md:text-4xl font-bold text-slate-900 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 xl:text-7xl dark:text-gray-800 bg-opacity-0 z-30 text-center justify-center w-full px-20">Impresión
+            class="absolute text-xs md:text-4xl font-bold text-white drop-shadow-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 xl:text-7xl dark:text-gray-800 bg-opacity-0 z-30 text-center justify-center w-full px-20">Impresión
             de calidad en plazos cortos</span>
-          <img src="./imgs/empresa-de-artes-graficas.jpg" class="absolute block w-full h-full" alt="..." />
+          <img src="./imgs/empresa-de-artes-graficas.jpg" class="absolute block w-full h-full" alt="..." style="filter: grayscale(50%) brightness(50%);"/>
           <div class="absolute justify-center z-33 -translate-x-1/2
             -translate-y-3/4 top-3/4 left-1/2"">
             <a
@@ -120,9 +120,9 @@
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="./imgs/Camioneta-amexxa.jpg" class="absolute block w-full h-full" alt="..." />
+          <img src="./imgs/Camioneta-amexxa.jpg" class="absolute block w-full h-full" alt="..." style="filter: grayscale(50%) brightness(50%);" />
           <span
-            class="absolute text-xs md:text-4xl font-bold text-slate-900 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 xl:text-7xl dark:text-gray-800 bg-opacity-0 z-30 text-center justify-center w-full px-20">Entregamos
+            class="absolute text-xs md:text-4xl font-bold text-white drop-shadow-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 xl:text-7xl dark:text-gray-800 bg-opacity-0 z-30 text-center justify-center w-full px-20">Entregamos
             tus productos en toda la república</span>
         </div>
       </div>
@@ -162,7 +162,7 @@
       </button>
   </section>
   <section id="nosotros"
-    class="bg-[url('./imgs/empresas-artes-graficas-1024x662.webp')] justify-center text-sm md:text-xl bg-no-repeat bg-cover lg:mb-28 py-28 bg-center">
+    class="justify-center text-sm md:text-xl bg-center bg-[#f97316]">
     <h3
       class="font-bold text-white md:text-6xl text-3xl wow fadeInLeft justify-center text-center px-1 md:px-12 2xl:px-72 mb-6 pt-20"
       data-wow-duration="1s" data-wow-delay=".5s">
@@ -221,14 +221,15 @@
         </p>
       </div>
     </div>
+    <div class="spacer layer1"></div>
   </section>
-  <section id="productos" class="bg-white  wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+  <section id="productos" class="bg-white">
     <h3
-      class="font-bold text-gray-800 md:text-6xl text-3xl justify-center items-center flex pt-24 mb-6 px-6 md:px-24 2xl:px-72">
+      class="font-bold text-gray-800 md:text-6xl text-3xl justify-center items-center flex pt-24 mb-6 px-6 md:px-24 2xl:px-72 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
       Productos
     </h3>
     <div
-      class="grid lg:grid-cols-5 items-center justify-center lg:gap-20 mb-6 lg:mb-12 px-6 gap-10 md:px-12 2xl:px-72 grid-rows-2">
+      class="grid lg:grid-cols-5 items-center justify-center lg:gap-20 mb-6 lg:mb-12 px-6 gap-10 md:px-12 2xl:px-72 grid-rows-2 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
       <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale-0 hover:grayscale">
         <img class="rounded-lg border-blue-300 border-4 shadow-xl" src="./imgs/cd9604_516be6238e864ba6a45be9bb4335818d_mv2.png"
           alt="" />
@@ -294,26 +295,28 @@
       </figure>
     </div>
     <div class="flex justify-center items-center">
-      <a class="px-12 py-5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out lg:mb-28"
+      <a class="px-12 py-5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out"
         href="cotizaciones">Cotizar</a>
     </div>
+    <div class="spacer layer2"></div>
   </section>
-  <section id="clientes" class="bg-white wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+  <section id="clientes" class="bg-[#f97316]">
     <h3
-      class="font-bold text-gray-800 md:text-6xl text-3xl justify-center items-center flex pt-24 mb-6 px-6 md:px-24 2xl:px-72">
+      class="font-bold text-white md:text-6xl text-3xl justify-center items-center flex pt-24 mb-6 px-6 md:px-24 2xl:px-72 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
       Nuestros clientes
     </h3>
     <div
-      class="grid lg:grid-cols-4 justify-center items-center lg:gap-20 mb-6 lg:mb-20 px-6 gap-10 md:px-32 2xl:px-72 lg:grid-rows-2">
+      class="grid lg:grid-cols-4 justify-center items-center lg:gap-20 px-6 gap-10 md:px-32 2xl:px-72 lg:grid-rows-2 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
       <img src="./imgs/Screen-Shot-2018-01-23-at-10.56.22.png" alt="" class="w-full h-auto" />
       <img src="./imgs/Midea-logo.png" alt="" class="w-full h-auto" />
       <img src="./imgs/glassia-company-logo-small.png" alt="" class="w-full h-auto mb-12 lg:mb-0 lg:mt-6" />
       <img src="./imgs/logo_purple.png" alt="" class="w-full h-auto mb-12 lg:mb-0" />
       <img src="./imgs/header-LOGO_MU-3.png" alt="" class="w-full h-auto" />
-      <img src="./imgs/Mezcal-Beneva.jpg" alt="" class="w-full h-auto" />
+      <img src="./imgs/Mezcal-Beneva.png" alt="" class="w-full h-auto" />
       <img src="./imgs/PROEBEE.png" alt="" class="w-full h-auto" />
       <img src="./imgs/logo-paralelo-mov.png" alt="" class="w-full h-auto" />
     </div>
+    <div class="spacer layer1"></div>
   </section>
   <section id="contacto" class="text-gray-800 text-center bg-white">
     <style>
@@ -348,7 +351,7 @@
                   class="w-full px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out button">
                   Enviar
                 </button>
-                <input type="hidden" name="_next" value="http://amexxa.com.mx/">
+                <input type="hidden" name="_next" value="https://amexxa.com.mx/">
                 <input type="hidden" name="_captcha" value="false">
               </form>
             </div>
@@ -356,7 +359,7 @@
           <div class="mb-12 lg:mb-6 mt-4 lg:mt-20">
             <div class="map-container relative shadow-lg rounded-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3768576205703!2d-99.19047498461184!3d19.525427742764226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7129fb579ff%3A0x2e39679c7dd46c42!2sInternet%20Interactiva!5e0!3m2!1ses-419!2smx!4v1676571087399!5m2!1ses-419!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3769754096647!2d-99.19086122392889!3d19.525422681773993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7ff8c45c3a3%3A0x388126d0b169cd36!2sAMEXXA!5e0!3m2!1ses-419!2smx!4v1696659384433!5m2!1ses-419!2smx"
                 class="left-0 top-0 h-full w-full absolute rounded-lg" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
