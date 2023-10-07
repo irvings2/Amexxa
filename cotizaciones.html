@@ -1,214 +1,280 @@
 <!DOCTYPE html>
 <html class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <title>Amexxa | Empaques | Embalajes | Etiquetas en Ciudad de México</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="output.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="/imgs/favicon.ico">
-  <link rel="stylesheet" href="/css/animate.css" />
-  <link rel="stylesheet" href="./css/styles.css">
-  <script src="/js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <title>Amexxa | Empaques | Embalajes | Etiquetas en Ciudad de México</title>
-</head>
-
-<body id="inicio"
-  class="uppercase text-slate-800 bg-[url('./imgs/empresa-de-artes-graficas.jpg')] bg-no-repeat bg-cover">
-  <header class="sticky top-0 z-40 bg-white text-lg bg-opacity-90">
-    <div class="navbar">
-      <div class="logo">
-        <a href="http://amexxa.com.mx/"><img src="./imgs/Logo_Amexxa_Nuevo-removebg-preview.png" alt="" class="h-12 w-48 top-2"></a>
+  <body
+    id="inicio"
+    class="uppercase text-slate-800 bg-[url('./imgs/empresa-de-artes-graficas.jpg')] bg-no-repeat bg-cover"
+  >
+    <header class="sticky top-0 z-40 bg-white text-lg bg-opacity-90">
+      <div class="navbar">
+        <div class="logo">
+          <a href="http://amexxa.com.mx/"
+            ><img
+              src="./imgs/Logo_Amexxa_Nuevo-removebg-preview.png"
+              alt=""
+              class="h-12 w-48 top-2"
+          /></a>
+        </div>
+        <ul class="links font-bold">
+          <li class="hover:text-blue-500">
+            <a href="http://amexxa.com.mx/#inicio">Inicio</a>
+          </li>
+          <li class="hover:text-blue-500">
+            <a href="http://amexxa.com.mx/#nosotros">Nosotros</a>
+          </li>
+          <li class="hover:text-blue-500">
+            <a href="http://amexxa.com.mx/#productos">Productos</a>
+          </li>
+          <li class="hover:text-blue-500">
+            <a href="http://amexxa.com.mx/#clientes">Clientes</a>
+          </li>
+          <li class="hover:text-blue-500">
+            <a href="http://amexxa.com.mx/#contacto">Contacto</a>
+          </li>
+        </ul>
+        <a class="action_btn" href="./cotizaciones">Cotizar</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <ul class="links font-bold">
+      <div class="dropdown_menu font-bold">
         <li class="hover:text-blue-500">
-          <a href="http://amexxa.com.mx/#inicio">Inicio</a>
+          <a href="https://amexxa.com.mx/#inicio">Inicio</a>
         </li>
         <li class="hover:text-blue-500">
-          <a href="http://amexxa.com.mx/#nosotros">Nosotros</a>
+          <a href="https://amexxa.com.mx/#nosotros">Nosotros</a>
         </li>
         <li class="hover:text-blue-500">
-          <a href="http://amexxa.com.mx/#productos">Productos</a>
+          <a href="https://amexxa.com.mx/#productos">Productos</a>
         </li>
         <li class="hover:text-blue-500">
-          <a href="http://amexxa.com.mx/#clientes">Clientes</a>
+          <a href="https://amexxa.com.mx/#clientes">Clientes</a>
         </li>
         <li class="hover:text-blue-500">
-          <a href="http://amexxa.com.mx/#contacto">Contacto</a>
+          <a href="https://amexxa.com.mx/#contacto">Contacto</a>
         </li>
-      </ul>
-      <a class="action_btn"
-              href="./cotizaciones">Cotizar</a>
-      <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
+        <li>
+          <a class="action_btn" href="./cotizaciones">Cotizar</a>
+        </li>
       </div>
-    </div>
-    <div class="dropdown_menu font-bold">
-      <li class="hover:text-blue-500">
-        <a href="https://amexxa.com.mx/#inicio">Inicio</a>
-      </li>
-      <li class="hover:text-blue-500">
-        <a href="https://amexxa.com.mx/#nosotros">Nosotros</a>
-      </li>
-      <li class="hover:text-blue-500">
-        <a href="https://amexxa.com.mx/#productos">Productos</a>
-      </li>
-      <li class="hover:text-blue-500">
-        <a href="https://amexxa.com.mx/#clientes">Clientes</a>
-      </li>
-      <li class="hover:text-blue-500">
-        <a href="https://amexxa.com.mx/#contacto">Contacto</a>
-      </li>
-      <li>
-        <a class="action_btn"
-              href="./cotizaciones">Cotizar</a>
-      </li>
-    </div>
-  </header>
-  <script>
-    const toggleBtn = document.querySelector('.toggle_btn')
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
-    toggleBtn.onclick = function (){
-      dropDownMenu.classList.toggle('open')
-      const isOpen = dropDownMenu.classList.contains('open')
+    </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
-      toggleBtnIcon.classList = isOpen
-      ? 'fa-solid fa-xmark'
-      : 'fa-solid fa-bars'
-    }
-  </script>
-  <div class="mb-12 mt-12 justify-center text-center items-center px-6 md:px-32 2xl:px-72 wow fadeIn"
-    data-wow-duration="1s" data-wow-delay=".5s">
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
     <div
-      class="block rounded-xl shadow-lg px-6 py-12 md:px-12 bg-white bg-opacity-90 border border-blueGray-100 border-opacity-60 shadow-11xl">
-      <h2 class="text-3xl font-bold mb-3">cotización</h2>
-      <form id="form2" action="https://formsubmit.co/IMPRESIONESFRANCIA@GMAIL.COM" method="POST">
-        <p class="font-semibold text-2xl">Llene este formulario y lo contactaremos lo más pronto posible.<br><br></p>
-        <h1>Medidas internas del empaque (cm)</h1>
-        <div class="form-group mb-6">
-          <input type="number"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input4" placeholder="Largo" name="Largo" />
-        </div>
-        <div class="form-group mb-6">
-          <input type="number"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input5" placeholder="Ancho" name="Ancho" />
-        </div>
-        <div class="form-group mb-6">
-          <input type="number"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input6" placeholder="Altura" name="Altura" />
-        </div>
-        <h1>Tipo de empaque/caja</h1>
-        <div class="form-group mb-6">
-          <select id="input7" name="Empaque"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-            <option value="">Seleccione el tipo de empaque</option>
-            <option value="Plegadizo">Plegadizo</option>
-            <option value="Fondo automático">Fondo automático</option>
-            <option value="Pegue lineal">Pegue lineal</option>
-            <option value="Microcorrugado">Microcorrugado</option>
-            <option value="Corrugado">Corrugado</option>
-          </select>
-        </div>
-        <h1>Tipo de material</h1>
-        <div class="form-group mb-6">
-          <input type="text"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input8" placeholder="Material" name="Material" />
-        </div>
-        <h1>Cantidad</h1>
-        <div class="form-group mb-6">
-          <select id="input9" name="Cantidad"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-            <option value="">Seleccione una cantidad</option>
-            <option value="500 a 1000 Piezas">500 a 1000 Piezas</option>
-            <option value="1000 a 2000 Piezas">1000 a 2000 Piezas</option>
-            <option value="2000 a 3000 Piezas">2000 a 3000 Piezas</option>
-            <option value="3000 a 4000 Piezas">3000 a 4000 Piezas</option>
-            <option value="4000 a 5000 Piezas">4000 a 5000 Piezas</option>
-            <option value="5000 a 6000 Piezas">5000 a 6000 Piezas</option>
-            <option value="6000 a 7000 Piezas">6000 a 7000 Piezas</option>
-            <option value="7000 a 8000 Piezas">7000 a 8000 Piezas</option>
-            <option value="8000 a 9000 Piezas">8000 a 9000 Piezas</option>
-            <option value="9000 a 10000 Piezas">9000 a 10000 Piezas</option>
-            <option value="Más de 10000 Piezas">Más de 10000 Piezas</option>
-          </select>
-        </div>
-        <h1>Periodo</h1>
-        <div class="form-group mb-6">
-          <select id="input10" name="Periodo"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-            <option value="">Seleccione un periodo</option>
-            <option value="Mensual">Mensual</option>
-            <option value="Bimestral">Bimestral</option>
-            <option value="Trimestral">Trimestral</option>
-            <option value="Otro">Otro</option>
-          </select>
-        </div>
-        <h1>Tiempo de entrega</h1>
-        <div class="form-group mb-6">
-          <select id="input11" name="Tiempo"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-            <option value="">Seleccione el tiempo de entrega</option>
-            <option value="Urgente (de 12 a 16 días hábiles)">
-              Urgente (De 12 a 16 días hábiles)
-            </option>
-            <option value="Normal (de 16 a 30 días hábiles)">
-              Normal (de 16 a 30 días hábiles)
-            </option>
-          </select>
-        </div>
-        <h1>Datos</h1>
-        <div class="form-group mb-6">
-          <input type="text"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input12" placeholder="Nombre" name="Nombre" />
-        </div>
-        <div class="form-group mb-6">
-          <input type="email"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input13" placeholder="Email" name="Email" />
-        </div>
-        <div class="form-group mb-6">
-          <input type="tel"
-            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-            id="input14" placeholder="Teléfono" name="Teléfono" />
-        </div>
-        <button type="submit"
-          class="w-full px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">
-          Enviar
-        </button>
-        <input type="hidden" name="_next" value="https://amexxa.com.mx/">
-        <input type="hidden" name="_captcha" value="false">
-      </form>
+      class="mb-12 mt-12 justify-center text-center items-center px-6 md:px-32 2xl:px-72 wow fadeIn"
+      data-wow-duration="1s"
+      data-wow-delay=".5s"
+    >
+      <div
+        class="block rounded-xl shadow-lg px-6 py-12 md:px-12 bg-white bg-opacity-90 border border-blueGray-100 border-opacity-60 shadow-11xl"
+      >
+        <h2 class="text-3xl font-bold mb-3">cotización</h2>
+        <form
+          id="form2"
+          action="https://formsubmit.co/IMPRESIONESFRANCIA@GMAIL.COM"
+          method="POST"
+        >
+          <p class="font-semibold text-2xl">
+            Llene este formulario y lo contactaremos lo más pronto posible.<br /><br />
+          </p>
+          <h1>Medidas internas del empaque (cm)</h1>
+          <div class="form-group mb-6">
+            <input
+              type="number"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input4"
+              placeholder="Largo"
+              name="Largo"
+            />
+          </div>
+          <div class="form-group mb-6">
+            <input
+              type="number"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input5"
+              placeholder="Ancho"
+              name="Ancho"
+            />
+          </div>
+          <div class="form-group mb-6">
+            <input
+              type="number"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input6"
+              placeholder="Altura"
+              name="Altura"
+            />
+          </div>
+          <h1>Tipo de empaque/caja</h1>
+          <div class="form-group mb-6">
+            <select
+              id="input7"
+              name="Empaque"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            >
+              <option value="">Seleccione el tipo de empaque</option>
+              <option value="Plegadizo">Plegadizo</option>
+              <option value="Fondo automático">Fondo automático</option>
+              <option value="Pegue lineal">Pegue lineal</option>
+              <option value="Microcorrugado">Microcorrugado</option>
+              <option value="Corrugado">Corrugado</option>
+            </select>
+          </div>
+          <h1>Tipo de material</h1>
+          <div class="form-group mb-6">
+            <input
+              type="text"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input8"
+              placeholder="Material"
+              name="Material"
+            />
+          </div>
+          <h1>Cantidad</h1>
+          <div class="form-group mb-6">
+            <select
+              id="input9"
+              name="Cantidad"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            >
+              <option value="">Seleccione una cantidad</option>
+              <option value="500 a 1000 Piezas">500 a 1000 Piezas</option>
+              <option value="1000 a 2000 Piezas">1000 a 2000 Piezas</option>
+              <option value="2000 a 3000 Piezas">2000 a 3000 Piezas</option>
+              <option value="3000 a 4000 Piezas">3000 a 4000 Piezas</option>
+              <option value="4000 a 5000 Piezas">4000 a 5000 Piezas</option>
+              <option value="5000 a 6000 Piezas">5000 a 6000 Piezas</option>
+              <option value="6000 a 7000 Piezas">6000 a 7000 Piezas</option>
+              <option value="7000 a 8000 Piezas">7000 a 8000 Piezas</option>
+              <option value="8000 a 9000 Piezas">8000 a 9000 Piezas</option>
+              <option value="9000 a 10000 Piezas">9000 a 10000 Piezas</option>
+              <option value="Más de 10000 Piezas">Más de 10000 Piezas</option>
+            </select>
+          </div>
+          <h1>Periodo</h1>
+          <div class="form-group mb-6">
+            <select
+              id="input10"
+              name="Periodo"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            >
+              <option value="">Seleccione un periodo</option>
+              <option value="Mensual">Mensual</option>
+              <option value="Bimestral">Bimestral</option>
+              <option value="Trimestral">Trimestral</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <h1>Tiempo de entrega</h1>
+          <div class="form-group mb-6">
+            <select
+              id="input11"
+              name="Tiempo"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            >
+              <option value="">Seleccione el tiempo de entrega</option>
+              <option value="Urgente (de 12 a 16 días hábiles)">
+                Urgente (De 12 a 16 días hábiles)
+              </option>
+              <option value="Normal (de 16 a 30 días hábiles)">
+                Normal (de 16 a 30 días hábiles)
+              </option>
+            </select>
+          </div>
+          <h1>Datos</h1>
+          <div class="form-group mb-6">
+            <input
+              type="text"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input12"
+              placeholder="Nombre"
+              name="Nombre"
+            />
+          </div>
+          <div class="form-group mb-6">
+            <input
+              type="email"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input13"
+              placeholder="Email"
+              name="Email"
+            />
+          </div>
+          <div class="form-group mb-6">
+            <input
+              type="tel"
+              class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              id="input14"
+              placeholder="Teléfono"
+              name="Teléfono"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full px-6 py-2.5 bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out"
+          >
+            Enviar
+          </button>
+          <input type="hidden" name="_next" value="https://amexxa.com.mx/" />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </div>
     </div>
-  </div>
-  <script src="/js/app.js"></script>
-  <a href="https://api.whatsapp.com/send?phone=525535696497"
-    class="flex fixed w-14 h-14 bottom-20 right-4 bg-[#25d366] z-50 items-center justify-center text-white rounded-full shadow-[#999] text-3xl hover:bg-green-400"
-    target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  <footer class="bg-gray-800 text-center lg:text-left">
-    <div class="text-gray-200 text-center p-4">
-      © 2023 Copyright:
-      <a class="text-gray-200">Amexxa SA</a>
-    </div>
-  </footer>
-  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-  <script src="/js/cotizaciones.js"></script>
-</body>
-
+    <script src="/js/app.js"></script>
+    <a
+      href="https://api.whatsapp.com/send?phone=525535696497"
+      class="flex fixed w-14 h-14 bottom-20 right-4 bg-[#25d366] z-50 items-center justify-center text-white rounded-full shadow-[#999] text-3xl hover:bg-green-400"
+      target="_blank"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <footer class="bg-gray-800 text-center lg:text-left">
+      <div class="text-gray-200 text-center p-4">
+        © 2023 Copyright:
+        <a class="text-gray-200">Amexxa SA</a>
+      </div>
+    </footer>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="/js/cotizaciones.js"></script>
+  </body>
 </html>
